@@ -9,8 +9,8 @@ namespace Tic_Tac_Toe
 
         public string currentPlayer = "X";
         public int currentTurn = 1;
-        public int minTurnsRequiredToScore = 5;
         public int maxTurns = 9;
+        public int minTurnsRequiredToWin = 5;
         public int xScoreCount = 0;
         public int oScoreCount = 0;
         public int drawsCount = 0;
@@ -26,6 +26,7 @@ namespace Tic_Tac_Toe
         {
             Button button = (Button)sender;
             bool boxIsEmpty = string.IsNullOrWhiteSpace(button.Text);
+            bool hasWinnerOrDraw = false;
 
             if (boxIsEmpty)
             {
@@ -33,78 +34,110 @@ namespace Tic_Tac_Toe
                 {
                     button.Text = "X";
 
-                    bool hasWinner = CheckForWinner();
-                    if (currentTurn >= minTurnsRequiredToScore && hasWinner)
+                    if (currentTurn >= minTurnsRequiredToWin)
                     {
-                        xScoreCount++;
-                        xScore.Text = $"X score: {xScoreCount}";
-                        RestartGame(sender, e);
+                        hasWinnerOrDraw = CheckForWinner(sender, e);
                     }
 
-                    currentPlayer = "O";
+                    if (!hasWinnerOrDraw)
+                    {
+                        currentPlayer = "O";
+                    }
                 }
                 else
                 {
                     button.Text = "O";
 
-                    bool hasWinner = CheckForWinner();
-                    if (currentTurn >= minTurnsRequiredToScore && hasWinner)
+                    if (currentTurn >= minTurnsRequiredToWin)
                     {
-                        oScoreCount++;
-                        oScore.Text = $"O score: {oScoreCount}";
-                        RestartGame(sender, e);
+                        hasWinnerOrDraw = CheckForWinner(sender, e);
                     }
 
-                    currentPlayer = "X";
+                    if (!hasWinnerOrDraw)
+                    {
+                        currentPlayer = "X";
+                    }
                 }
 
-                currentTurn++;
+                if (!hasWinnerOrDraw)
+                {
+                    currentTurn++;
+                }
             }
-
         }
 
-        private bool CheckForWinner()
+        private bool CheckForWinner(object sender, EventArgs e)
         {
+            bool hasWinnerOrDraw = false;
+
             // horizontal
             if (box1.Text == box2.Text && box1.Text == box3.Text && !string.IsNullOrWhiteSpace(box1.Text))
             {
-                return true;
+                hasWinnerOrDraw = true;
             }
             else if (box4.Text == box5.Text && box4.Text == box6.Text && !string.IsNullOrWhiteSpace(box4.Text))
             {
-                return true;
+                hasWinnerOrDraw = true;
             }
             else if (box7.Text == box8.Text && box7.Text == box9.Text && !string.IsNullOrWhiteSpace(box7.Text))
             {
-                return true;
+                hasWinnerOrDraw = true;
             }
 
             // vertical
             if (box1.Text == box4.Text && box1.Text == box7.Text && !string.IsNullOrWhiteSpace(box1.Text))
             {
-                return true;
+                hasWinnerOrDraw = true;
             }
             else if (box2.Text == box5.Text && box2.Text == box8.Text && !string.IsNullOrWhiteSpace(box2.Text))
             {
-                return true;
+                hasWinnerOrDraw = true;
             }
             else if (box3.Text == box6.Text && box3.Text == box9.Text && !string.IsNullOrWhiteSpace(box3.Text))
             {
-                return true;
+                hasWinnerOrDraw = true;
             }
 
             // diagonal
             if (box1.Text == box5.Text && box1.Text == box9.Text && !string.IsNullOrWhiteSpace(box1.Text))
             {
-                return true;
+                hasWinnerOrDraw = true;
             }
             else if (box3.Text == box5.Text && box3.Text == box7.Text && !string.IsNullOrWhiteSpace(box3.Text))
             {
-                return true;
+                hasWinnerOrDraw = true;
             }
 
-            return false;
+            if (hasWinnerOrDraw)
+            {
+                if (currentPlayer == "X")
+                {
+                    xScoreCount++;
+                    xScore.Text = $"{currentPlayer} score: {xScoreCount}";
+                }
+                else
+                {
+                    oScoreCount++;
+                    oScore.Text = $"{currentPlayer} score: {oScoreCount}";
+                }
 
+
+                RestartGame(sender, e);
+            }
+            else if (currentTurn == maxTurns)
+            {
+                hasWinnerOrDraw = true;
+                CheckForDraw(sender, e);
+            }
+
+            return hasWinnerOrDraw;
+        }
+
+        private void CheckForDraw(object sender, EventArgs e)
+        {
+            drawsCount++;
+            draws.Text = $"Draws:   {drawsCount}";
+            RestartGame(sender, e);
         }
 
         private void RestartGame(object sender, EventArgs e)
