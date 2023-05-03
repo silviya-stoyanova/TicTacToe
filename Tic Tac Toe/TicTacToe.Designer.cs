@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.box1 = new System.Windows.Forms.Button();
+            this.box2 = new System.Windows.Forms.Button();
+            this.box4 = new System.Windows.Forms.Button();
+            this.box5 = new System.Windows.Forms.Button();
+            this.box6 = new System.Windows.Forms.Button();
+            this.box7 = new System.Windows.Forms.Button();
+            this.box8 = new System.Windows.Forms.Button();
+            this.newGameBtn = new System.Windows.Forms.Button();
+            this.restartGameBtn = new System.Windows.Forms.Button();
+            this.exitBtn = new System.Windows.Forms.Button();
+            this.xScore = new System.Windows.Forms.Label();
+            this.oScore = new System.Windows.Forms.Label();
+            this.draws = new System.Windows.Forms.Label();
+            this.box9 = new System.Windows.Forms.Button();
+            this.box3 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -53,241 +53,266 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // box1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(180, 125);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 110);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.box1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box1.FlatAppearance.BorderSize = 0;
+            this.box1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.box1.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.box1.ForeColor = System.Drawing.Color.White;
+            this.box1.Location = new System.Drawing.Point(180, 125);
+            this.box1.Margin = new System.Windows.Forms.Padding(0);
+            this.box1.Name = "box1";
+            this.box1.Size = new System.Drawing.Size(110, 110);
+            this.box1.TabIndex = 0;
+            this.box1.UseVisualStyleBackColor = false;
+            this.box1.Click += new System.EventHandler(this.buttonClick);
             // 
-            // button2
+            // box2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(300, 125);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 110);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.box2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box2.FlatAppearance.BorderSize = 0;
+            this.box2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.box2.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.box2.ForeColor = System.Drawing.Color.White;
+            this.box2.Location = new System.Drawing.Point(300, 125);
+            this.box2.Margin = new System.Windows.Forms.Padding(0);
+            this.box2.Name = "box2";
+            this.box2.Size = new System.Drawing.Size(110, 110);
+            this.box2.TabIndex = 1;
+            this.box2.UseVisualStyleBackColor = false;
+            this.box2.Click += new System.EventHandler(this.buttonClick);
             // 
-            // button4
+            // box4
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(180, 244);
-            this.button4.Margin = new System.Windows.Forms.Padding(0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(110, 110);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = false;
+            this.box4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box4.FlatAppearance.BorderSize = 0;
+            this.box4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.box4.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.box4.ForeColor = System.Drawing.Color.White;
+            this.box4.Location = new System.Drawing.Point(180, 244);
+            this.box4.Margin = new System.Windows.Forms.Padding(0);
+            this.box4.Name = "box4";
+            this.box4.Size = new System.Drawing.Size(110, 110);
+            this.box4.TabIndex = 3;
+            this.box4.UseVisualStyleBackColor = false;
+            this.box4.Click += new System.EventHandler(this.buttonClick);
             // 
-            // button5
+            // box5
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(300, 244);
-            this.button5.Margin = new System.Windows.Forms.Padding(0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(110, 110);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = false;
+            this.box5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box5.FlatAppearance.BorderSize = 0;
+            this.box5.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.box5.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.box5.ForeColor = System.Drawing.Color.White;
+            this.box5.Location = new System.Drawing.Point(300, 244);
+            this.box5.Margin = new System.Windows.Forms.Padding(0);
+            this.box5.Name = "box5";
+            this.box5.Size = new System.Drawing.Size(110, 110);
+            this.box5.TabIndex = 4;
+            this.box5.UseVisualStyleBackColor = false;
+            this.box5.Click += new System.EventHandler(this.buttonClick);
             // 
-            // button6
+            // box6
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(420, 244);
-            this.button6.Margin = new System.Windows.Forms.Padding(0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(110, 110);
-            this.button6.TabIndex = 5;
-            this.button6.UseVisualStyleBackColor = false;
+            this.box6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box6.FlatAppearance.BorderSize = 0;
+            this.box6.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.box6.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.box6.ForeColor = System.Drawing.Color.White;
+            this.box6.Location = new System.Drawing.Point(420, 244);
+            this.box6.Margin = new System.Windows.Forms.Padding(0);
+            this.box6.Name = "box6";
+            this.box6.Size = new System.Drawing.Size(110, 110);
+            this.box6.TabIndex = 5;
+            this.box6.UseVisualStyleBackColor = false;
+            this.box6.Click += new System.EventHandler(this.buttonClick);
             // 
-            // button7
+            // box7
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(180, 364);
-            this.button7.Margin = new System.Windows.Forms.Padding(0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(110, 110);
-            this.button7.TabIndex = 6;
-            this.button7.UseVisualStyleBackColor = false;
+            this.box7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box7.FlatAppearance.BorderSize = 0;
+            this.box7.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.box7.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.box7.ForeColor = System.Drawing.Color.White;
+            this.box7.Location = new System.Drawing.Point(180, 364);
+            this.box7.Margin = new System.Windows.Forms.Padding(0);
+            this.box7.Name = "box7";
+            this.box7.Size = new System.Drawing.Size(110, 110);
+            this.box7.TabIndex = 6;
+            this.box7.UseVisualStyleBackColor = false;
+            this.box7.Click += new System.EventHandler(this.buttonClick);
             // 
-            // button8
+            // box8
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(300, 364);
-            this.button8.Margin = new System.Windows.Forms.Padding(0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(110, 110);
-            this.button8.TabIndex = 7;
-            this.button8.UseVisualStyleBackColor = false;
+            this.box8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box8.FlatAppearance.BorderSize = 0;
+            this.box8.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.box8.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.box8.ForeColor = System.Drawing.Color.White;
+            this.box8.Location = new System.Drawing.Point(300, 364);
+            this.box8.Margin = new System.Windows.Forms.Padding(0);
+            this.box8.Name = "box8";
+            this.box8.Size = new System.Drawing.Size(110, 110);
+            this.box8.TabIndex = 7;
+            this.box8.UseVisualStyleBackColor = false;
+            this.box8.Click += new System.EventHandler(this.buttonClick);
             // 
-            // button10
+            // newGameBtn
             // 
-            this.button10.AutoSize = true;
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Chiller", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(473, 628);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(166, 60);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "New game";
-            this.button10.UseVisualStyleBackColor = false;
+            this.newGameBtn.AutoSize = true;
+            this.newGameBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.newGameBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.newGameBtn.FlatAppearance.BorderSize = 0;
+            this.newGameBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.newGameBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.newGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newGameBtn.Font = new System.Drawing.Font("Chiller", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.newGameBtn.ForeColor = System.Drawing.Color.White;
+            this.newGameBtn.Location = new System.Drawing.Point(473, 628);
+            this.newGameBtn.Name = "newGameBtn";
+            this.newGameBtn.Size = new System.Drawing.Size(166, 60);
+            this.newGameBtn.TabIndex = 9;
+            this.newGameBtn.Text = "New game";
+            this.newGameBtn.UseVisualStyleBackColor = false;
+            this.newGameBtn.Click += new System.EventHandler(this.newGameBtn_Click);
             // 
-            // button11
+            // restartGameBtn
             // 
-            this.button11.AutoSize = true;
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.RosyBrown;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Chiller", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(162, 628);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(212, 60);
-            this.button11.TabIndex = 10;
-            this.button11.Text = "Restart game";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.restartGameBtn.AutoSize = true;
+            this.restartGameBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.restartGameBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.restartGameBtn.FlatAppearance.BorderColor = System.Drawing.Color.RosyBrown;
+            this.restartGameBtn.FlatAppearance.BorderSize = 0;
+            this.restartGameBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.restartGameBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.restartGameBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.restartGameBtn.Font = new System.Drawing.Font("Chiller", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.restartGameBtn.ForeColor = System.Drawing.Color.White;
+            this.restartGameBtn.Location = new System.Drawing.Point(162, 628);
+            this.restartGameBtn.Name = "restartGameBtn";
+            this.restartGameBtn.Size = new System.Drawing.Size(212, 60);
+            this.restartGameBtn.TabIndex = 10;
+            this.restartGameBtn.Text = "Restart game";
+            this.restartGameBtn.UseVisualStyleBackColor = false;
+            this.restartGameBtn.Click += new System.EventHandler(this.restartGameBtn_Click);
             // 
-            // button12
+            // exitBtn
             // 
-            this.button12.BackColor = System.Drawing.Color.White;
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Chiller", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button12.Location = new System.Drawing.Point(758, 625);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(243, 63);
-            this.button12.TabIndex = 11;
-            this.button12.Text = "EXIT";
-            this.button12.UseVisualStyleBackColor = false;
+            this.exitBtn.BackColor = System.Drawing.Color.White;
+            this.exitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exitBtn.FlatAppearance.BorderSize = 0;
+            this.exitBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.exitBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitBtn.Font = new System.Drawing.Font("Chiller", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.exitBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.exitBtn.Location = new System.Drawing.Point(758, 625);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(243, 63);
+            this.exitBtn.TabIndex = 11;
+            this.exitBtn.Text = "EXIT";
+            this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
-            // label1
+            // xScore
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Chiller", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(758, 129);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 50);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "X:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.xScore.AutoSize = true;
+            this.xScore.Font = new System.Drawing.Font("Chiller", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.xScore.ForeColor = System.Drawing.Color.White;
+            this.xScore.Location = new System.Drawing.Point(758, 129);
+            this.xScore.Name = "xScore";
+            this.xScore.Size = new System.Drawing.Size(138, 50);
+            this.xScore.TabIndex = 12;
+            this.xScore.Text = "X score:";
             // 
-            // label4
+            // oScore
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Chiller", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(758, 265);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 50);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "O:";
+            this.oScore.AutoSize = true;
+            this.oScore.Font = new System.Drawing.Font("Chiller", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.oScore.ForeColor = System.Drawing.Color.White;
+            this.oScore.Location = new System.Drawing.Point(758, 265);
+            this.oScore.Name = "oScore";
+            this.oScore.Size = new System.Drawing.Size(138, 50);
+            this.oScore.TabIndex = 15;
+            this.oScore.Text = "O score:";
             // 
-            // label2
+            // draws
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Chiller", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(758, 400);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 50);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Draws:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.draws.AutoSize = true;
+            this.draws.Font = new System.Drawing.Font("Chiller", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.draws.ForeColor = System.Drawing.Color.White;
+            this.draws.Location = new System.Drawing.Point(758, 400);
+            this.draws.Name = "draws";
+            this.draws.Size = new System.Drawing.Size(109, 50);
+            this.draws.TabIndex = 16;
+            this.draws.Text = "Draws:";
             // 
-            // button13
+            // box9
             // 
-            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(420, 364);
-            this.button13.Margin = new System.Windows.Forms.Padding(0);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(110, 110);
-            this.button13.TabIndex = 17;
-            this.button13.UseVisualStyleBackColor = false;
+            this.box9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box9.FlatAppearance.BorderSize = 0;
+            this.box9.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.box9.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.box9.ForeColor = System.Drawing.Color.White;
+            this.box9.Location = new System.Drawing.Point(420, 364);
+            this.box9.Margin = new System.Windows.Forms.Padding(0);
+            this.box9.Name = "box9";
+            this.box9.Size = new System.Drawing.Size(110, 110);
+            this.box9.TabIndex = 17;
+            this.box9.UseVisualStyleBackColor = false;
+            this.box9.Click += new System.EventHandler(this.buttonClick);
             // 
-            // button9
+            // box3
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(420, 124);
-            this.button9.Margin = new System.Windows.Forms.Padding(0);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(110, 110);
-            this.button9.TabIndex = 19;
-            this.button9.UseVisualStyleBackColor = false;
+            this.box3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.box3.FlatAppearance.BorderSize = 0;
+            this.box3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(137)))), ((int)(((byte)(2)))));
+            this.box3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.box3.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.box3.ForeColor = System.Drawing.Color.White;
+            this.box3.Location = new System.Drawing.Point(420, 124);
+            this.box3.Margin = new System.Windows.Forms.Padding(0);
+            this.box3.Name = "box3";
+            this.box3.Size = new System.Drawing.Size(110, 110);
+            this.box3.TabIndex = 19;
+            this.box3.UseVisualStyleBackColor = false;
+            this.box3.Click += new System.EventHandler(this.buttonClick);
             // 
             // pictureBox2
             // 
@@ -339,21 +364,21 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.box3);
+            this.Controls.Add(this.box9);
+            this.Controls.Add(this.draws);
+            this.Controls.Add(this.oScore);
+            this.Controls.Add(this.xScore);
+            this.Controls.Add(this.exitBtn);
+            this.Controls.Add(this.restartGameBtn);
+            this.Controls.Add(this.newGameBtn);
+            this.Controls.Add(this.box8);
+            this.Controls.Add(this.box7);
+            this.Controls.Add(this.box6);
+            this.Controls.Add(this.box5);
+            this.Controls.Add(this.box4);
+            this.Controls.Add(this.box2);
+            this.Controls.Add(this.box1);
             this.Name = "TicTacToe";
             this.Text = "Tic Tac Toe";
             this.Load += new System.EventHandler(this.TicTacToe_Load);
@@ -368,24 +393,24 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private Button button10;
-        private Button button11;
-        private Button button12;
-        private Label label1;
-        private Label label4;
-        private Label label2;
-        private Button button13;
-        private Button button9;
+        private Button box1;
+        private Button box2;
+        private Button box3;
+        private Button box4;
+        private Button box5;
+        private Button box6;
+        private Button box7;
+        private Button box8;
+        private Button box9;
+        private Button restartGameBtn;
+        private Button newGameBtn;
+        private Button exitBtn;
+        private Label xScore;
+        private Label oScore;
+        private Label draws;
+        private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private PictureBox pictureBox1;
         private PictureBox pictureBox4;
     }
 }
