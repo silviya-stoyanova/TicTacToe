@@ -22,7 +22,7 @@ namespace Tic_Tac_Toe
             draws.Text = $"Draws:   {drawsCount}";
         }
 
-        private void BoxClick(object sender, EventArgs e)
+        private void HandleBoxClick(object sender, EventArgs e)
         {
             Button button = (Button)sender;
             bool boxIsEmpty = string.IsNullOrWhiteSpace(button.Text);
@@ -134,7 +134,6 @@ namespace Tic_Tac_Toe
             xScore.Text = $"X score: {xScoreCount}";
             oScore.Text = $"O score: {oScoreCount}";
             draws.Text = $"Draws:   {drawsCount}";
-
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
