@@ -70,7 +70,7 @@
             this.box1.Size = new System.Drawing.Size(110, 110);
             this.box1.TabIndex = 0;
             this.box1.UseVisualStyleBackColor = false;
-            this.box1.Click += new System.EventHandler(this.buttonClick);
+            this.box1.Click += new System.EventHandler(this.boxClick);
             // 
             // box2
             // 
@@ -89,7 +89,7 @@
             this.box2.Size = new System.Drawing.Size(110, 110);
             this.box2.TabIndex = 1;
             this.box2.UseVisualStyleBackColor = false;
-            this.box2.Click += new System.EventHandler(this.buttonClick);
+            this.box2.Click += new System.EventHandler(this.boxClick);
             // 
             // box4
             // 
@@ -108,7 +108,7 @@
             this.box4.Size = new System.Drawing.Size(110, 110);
             this.box4.TabIndex = 3;
             this.box4.UseVisualStyleBackColor = false;
-            this.box4.Click += new System.EventHandler(this.buttonClick);
+            this.box4.Click += new System.EventHandler(this.boxClick);
             // 
             // box5
             // 
@@ -127,7 +127,7 @@
             this.box5.Size = new System.Drawing.Size(110, 110);
             this.box5.TabIndex = 4;
             this.box5.UseVisualStyleBackColor = false;
-            this.box5.Click += new System.EventHandler(this.buttonClick);
+            this.box5.Click += new System.EventHandler(this.boxClick);
             // 
             // box6
             // 
@@ -146,7 +146,7 @@
             this.box6.Size = new System.Drawing.Size(110, 110);
             this.box6.TabIndex = 5;
             this.box6.UseVisualStyleBackColor = false;
-            this.box6.Click += new System.EventHandler(this.buttonClick);
+            this.box6.Click += new System.EventHandler(this.boxClick);
             // 
             // box7
             // 
@@ -165,7 +165,7 @@
             this.box7.Size = new System.Drawing.Size(110, 110);
             this.box7.TabIndex = 6;
             this.box7.UseVisualStyleBackColor = false;
-            this.box7.Click += new System.EventHandler(this.buttonClick);
+            this.box7.Click += new System.EventHandler(this.boxClick);
             // 
             // box8
             // 
@@ -184,7 +184,7 @@
             this.box8.Size = new System.Drawing.Size(110, 110);
             this.box8.TabIndex = 7;
             this.box8.UseVisualStyleBackColor = false;
-            this.box8.Click += new System.EventHandler(this.buttonClick);
+            this.box8.Click += new System.EventHandler(this.boxClick);
             // 
             // newGameBtn
             // 
@@ -293,7 +293,7 @@
             this.box9.Size = new System.Drawing.Size(110, 110);
             this.box9.TabIndex = 17;
             this.box9.UseVisualStyleBackColor = false;
-            this.box9.Click += new System.EventHandler(this.buttonClick);
+            this.box9.Click += new System.EventHandler(this.boxClick);
             // 
             // box3
             // 
@@ -312,7 +312,7 @@
             this.box3.Size = new System.Drawing.Size(110, 110);
             this.box3.TabIndex = 19;
             this.box3.UseVisualStyleBackColor = false;
-            this.box3.Click += new System.EventHandler(this.buttonClick);
+            this.box3.Click += new System.EventHandler(this.boxClick);
             // 
             // pictureBox2
             // 
