@@ -22,7 +22,7 @@ namespace Tic_Tac_Toe
             draws.Text = $"Draws:   {drawsCount}";
         }
 
-        private void boxClick(object sender, EventArgs e)
+        private void BoxClick(object sender, EventArgs e)
         {
             Button button = (Button)sender;
             bool boxIsEmpty = string.IsNullOrWhiteSpace(button.Text);
@@ -38,7 +38,7 @@ namespace Tic_Tac_Toe
                     {
                         xScoreCount++;
                         xScore.Text = $"X score: {xScoreCount}";
-                        restartGameBtn_Click(sender, e);
+                        RestartGame(sender, e);
                     }
 
                     currentPlayer = "O";
@@ -52,7 +52,7 @@ namespace Tic_Tac_Toe
                     {
                         oScoreCount++;
                         oScore.Text = $"O score: {oScoreCount}";
-                        restartGameBtn_Click(sender, e);
+                        RestartGame(sender, e);
                     }
 
                     currentPlayer = "X";
@@ -107,7 +107,7 @@ namespace Tic_Tac_Toe
 
         }
 
-        private void restartGameBtn_Click(object sender, EventArgs e)
+        private void RestartGame(object sender, EventArgs e)
         {
             box1.Text = "";
             box2.Text = "";
@@ -123,9 +123,9 @@ namespace Tic_Tac_Toe
             currentTurn = 1;
         }
 
-        private void newGameBtn_Click(object sender, EventArgs e)
+        private void CreateNewGame(object sender, EventArgs e)
         {
-            restartGameBtn_Click(sender, e);
+            RestartGame(sender, e);
 
             xScoreCount = 0;
             oScoreCount = 0;
