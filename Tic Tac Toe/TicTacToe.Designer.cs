@@ -199,9 +199,9 @@
             this.newGameBtn.ForeColor = System.Drawing.Color.White;
             this.newGameBtn.Location = new System.Drawing.Point(473, 628);
             this.newGameBtn.Name = "newGameBtn";
-            this.newGameBtn.Size = new System.Drawing.Size(166, 60);
+            this.newGameBtn.Size = new System.Drawing.Size(212, 60);
             this.newGameBtn.TabIndex = 9;
-            this.newGameBtn.Text = "New game";
+            this.newGameBtn.Text = "Clear results";
             this.newGameBtn.UseVisualStyleBackColor = false;
             this.newGameBtn.Click += new System.EventHandler(this.CreateNewGame);
             // 
@@ -221,7 +221,7 @@
             this.restartGameBtn.Name = "restartGameBtn";
             this.restartGameBtn.Size = new System.Drawing.Size(212, 60);
             this.restartGameBtn.TabIndex = 10;
-            this.restartGameBtn.Text = "Restart game";
+            this.restartGameBtn.Text = "New game";
             this.restartGameBtn.UseVisualStyleBackColor = false;
             this.restartGameBtn.Click += new System.EventHandler(this.RestartGame);
             // 
@@ -241,7 +241,7 @@
             this.exitBtn.TabIndex = 11;
             this.exitBtn.Text = "EXIT";
             this.exitBtn.UseVisualStyleBackColor = false;
-            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
+            this.exitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // xScore
             // 

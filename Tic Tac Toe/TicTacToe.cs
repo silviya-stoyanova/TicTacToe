@@ -15,6 +15,14 @@ namespace Tic_Tac_Toe
         public int oScoreCount = 0;
         public int drawsCount = 0;
 
+        public List<Button> GetBoxes()
+        {
+            return new List<Button>()
+            {
+                box1, box2, box3, box4, box5, box6, box7, box8, box9
+            };
+        }
+
         private void TicTacToe_Load(object sender, EventArgs e)
         {
             xScore.Text = $"X score: {xScoreCount}";
@@ -142,16 +150,7 @@ namespace Tic_Tac_Toe
 
         private void RestartGame(object sender, EventArgs e)
         {
-            box1.Text = "";
-            box2.Text = "";
-            box3.Text = "";
-            box4.Text = "";
-            box5.Text = "";
-            box6.Text = "";
-            box7.Text = "";
-            box8.Text = "";
-            box9.Text = "";
-
+            GetBoxes().ForEach(box => box.Text = "");
             currentPlayer = "X";
             currentTurn = 1;
         }
@@ -169,7 +168,7 @@ namespace Tic_Tac_Toe
             draws.Text = $"Draws:   {drawsCount}";
         }
 
-        private void exitBtn_Click(object sender, EventArgs e)
+        private void ExitBtn_Click(object sender, EventArgs e)
         {
             Close();
         }
